@@ -27,4 +27,4 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 Set-TimeZone -Id "Tokyo Standard Time"
 
 # Install New Forest
-Install-ADDSForest -DomainName $domain -InstallDNS --SafeModeAdministratorPassword $password -Force
+Install-ADDSForest -DomainName $domain -InstallDNS -SafeModeAdministratorPassword $password -Force
